@@ -1,5 +1,4 @@
-    var scotchApp = angular.module('scotchApp', ['ngRoute']);
-
+    
         // create the controller and inject Angular's $scope
     scotchApp.controller('mainController', function($scope) {
         // create a message to display in our view
