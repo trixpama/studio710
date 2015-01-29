@@ -1,0 +1,51 @@
+{
+  "name": "angular-fontselect",
+  "version": "0.9.5",
+  "authors": [
+    "Hannes Diercks <hannes.diercks@jimdo.com>",
+    "Lasse Diercks <lasse@jimdo.com>",
+    "Joscha Feth <joscha@feth.com>",
+    "Ole Michaelis <Ole.Michaelis@googlemail.com>",
+    "Hauke Stange <hauke@jimdo.com>",
+    "Sebastian Eichner <mail@sebastian-eichner.de>",
+    "HerrBertling <markus277@gmail.com>"
+  ],
+  "description": "A fontselect directive for AngularJS",
+  "main": "dist/angular-fontselect.js",
+  "keywords": [
+    "fonts",
+    "directive",
+    "angular",
+    "webfonts"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "webfontloader": "1.5.8",
+    "lesshat": "3.0.2",
+    "jquery": "2.1.1"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "demo",
+    "src",
+    "Gruntfile.js",
+    "package.json"
+  ],
+  "dependencies": {
+    "angular": "^1.2.25 <= 1.3.8"
+  },
+  "homepage": "https://github.com/Jimdo/angular-fontselect",
+  "_release": "0.9.5",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.9.5",
+    "commit": "dc586c57955b53be476ae2aa108792e7f8e9979f"
+  },
+  "_source": "git://github.com/Jimdo/angular-fontselect.git",
+  "_target": "~0.9.5",
+  "_originalSource": "jd-fontselect",
+  "_direct": true
+}
