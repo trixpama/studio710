@@ -1,62 +1,13 @@
-<ng-controller='contactController'>   
 
-    <!--         <div class="jumbotron text-center">
-            <a href="#/{{font.font}}">
-            <li ng-repeat="item in contacts">
-              <p>{{item.font}}</p>
-            </li>
-  			</a>
-            </div>
-             -->
-   
-<!-- 
-       <div class="jumbotron text-center">
-
-
-        <p>{{ font.font }}</p>
-
-        <li ng-repeat="font in contacts">
-		<p class="text-primary">{{font.font}}</p>
-		</li>
-
-    </div>
-
-    <ul class="list-unstyled">
     
-</ul>
-
-
- -->
-<div class="jumbotron text-center">
-	<a href="#/museo">
-        <p>{{ font1 }}</p>
-	</a>
+<div ng-repeat="font in pairs" class="jumbotron text-center">
+	<p class="{{font.cssName}}">{{font.name}}</p>
+    <button ng-click="fontClick()">Add to Favorites</button>
 </div>
 
-  <div class="jumbotron text-center">
+<div ng-repeat="fav in favorites track by $index">
+    <p>{{fav.name}}</p>
+</div>
 
-        <p>{{ font2 }}</p>
-
-    </div> 
-
-       <div class="jumbotron text-center">
-
-        <p>{{ font3 }}</p>
-
-    </div>
-
-
-       <div class="jumbotron text-center">
-
-        <p>{{ font4 }}</p>
-
-    </div>
-
-
-       <div class="jumbotron text-center">
-
-        <p>{{ font5 }}</p>
-
-    </div>
-
+       
 

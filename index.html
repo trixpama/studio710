@@ -11,6 +11,25 @@
       <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:regular&amp;text=Open%20Sans" />
       <!-- SPELLS -->
       <!-- load angular and angular route via CDN -->
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+        <script type="text/javascript">
+          WebFont.load({
+            google: {
+              families: ['Cantarell', 'Open Sans']
+            }
+          });
+        </script>
+        <style type="text/css">
+        
+            
+            .font-open-sans {
+                font-family: 'Open Sans';
+            }
+            .font-cantarell {
+                
+            }
+        </style>
     
     </head>
 
@@ -24,14 +43,11 @@
                 </div> -->
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><i class="fa fa-home"></i></a></li>
-<!--  google api key: AIzaSyBylGW2HEJZdkYSLe-r1oyTncoZUXCnqIA
+                    <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="#contact"><i class="fa fa-home"> Contact</i></a></li>
+                    <li><a href="#font/museo"><i class="fa fa-home"> Museo</i></a></li>
 
-                    <li><a href="#/about"><i class="fa fa-shield"></i> Serifs</a></li>
-                    <li><a href="#/contact"> <i class="fa fa-comment"></i> Sans-Serifs</a></li>  
-
--->
-
+                    
                 </ul>
             </div>
             </nav>
@@ -46,14 +62,15 @@
 
 
 
-              
-
+              <script src="https://cdn.rawgit.com/lodash/lodash/3.0.1/lodash.min.js"></script>
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
           <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
       <script src="script.js"></script>
       <script src="controllers/home.js"></script>
       <script src="controllers/about.js"></script>
       <script src="controllers/contact.js"></script>
+      <script src="controllers/museo.js"></script>
 
     </body>
     </html>
