@@ -3,9 +3,9 @@
     // create the module and name it scotchApp
         // also include ngRoute for all our routing needs
 
-   var scotchApp =  angular.module('myApp', ['jdFontselect']).constant('jdFontselectConfig', {
-  googleApiKey: 'AIzaSyBylGW2HEJZdkYSLe-r1oyTncoZUXCnqIA'
-});    
+//    var scotchApp =  angular.module('myApp', ['jdFontselect']).constant('jdFontselectConfig', {
+//   googleApiKey: 'AIzaSyBylGW2HEJZdkYSLe-r1oyTncoZUXCnqIA'
+// });    
     var scotchApp = angular.module('scotchApp', ['ngRoute']);
 
     // configure our routes
