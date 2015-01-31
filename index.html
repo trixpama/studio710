@@ -3,25 +3,14 @@
     <head>
       <!-- SCROLLS -->
       <!-- load bootstrap and fontawesome via CDN -->
-      <!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
-      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" /> -->
 
       <link rel="stylesheet" href="startbootstrap-freelancer-1.0.2/css/bootstrap.min.css" />
       <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" /> 
-      <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:regular&amp;text=Open%20Sans" />
+      <link href="toastr_components/toastr.css" rel="stylesheet"/>
       <!-- SPELLS -->
       <!-- load angular and angular route via CDN -->
         
-        <script src="http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
-        <!--<script type="text/javascript">
-        //   WebFont.load({
-        //     google: {
-        //       families: ['Cantarell', 'Open Sans']
-        //     }
-        //   });
-        </script> -->
-
-        <style type="text/css">
+      <style type="text/css">
         
         /*Serifs*/
             
@@ -41,14 +30,22 @@
                 font-family: 'Quattrocento';   
             }
 
-
           /*Sans Serifs*/
           
           .font-open-sans {
               font-family: 'Open Sans';
           }
-          .font-cantarell {
-              
+          .font-lato {
+              font-family: 'Lato';
+          }
+          .font-roboto {
+              font-family: 'Roboto';
+          }
+          .font-raleway {
+              font-family: 'Raleway';
+          }
+          .font-pt-sans {
+              font-family: 'PT Sans';
           }
         </style>
     
@@ -64,10 +61,7 @@
                 </div> -->
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
-<!--                     <li><a href="#contact"><i class="fa fa-home"> Contact</i></a></li>
-                    <li><a href="#font/museo"><i class="fa fa-home"> Museo</i></a></li> -->
-
+                    <li><a href="#"><i class="fa fa-lg fa-book"></i></a></li>
                     
                 </ul>
             </div>
@@ -75,29 +69,28 @@
         </header>
 
 <div id="main">
-            <!-- this space is where we display everything -->
             <!-- div ng-view displays the entire app -->
            <div ng-view></div>
 </div>
 
-
-
-
+<!-- Angular Stuff -->
       <script src="https://cdn.rawgit.com/lodash/lodash/3.0.1/lodash.min.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
-      
+
+<!-- Google Font API -->
+      <script src="http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+
+<!-- Toastr JS --> 
+      <script src="toastr_components/toastr.js"></script>
+
 <!-- Router -->
       <script src="script.js"></script>
       
 <!-- Controllers -->
       <script src="controllers/home.js"></script>
       <script src="controllers/primaryFontList.js"></script>
-
-<!--       // <script src="controllers/about.js"></script> -->
-      
-
 
     </body>
     </html>

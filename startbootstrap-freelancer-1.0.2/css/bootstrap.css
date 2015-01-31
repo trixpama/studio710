@@ -3023,6 +3023,7 @@ fieldset[disabled] .btn-warning.active {
 .btn-warning .badge {
   color: #f39c12;
   background-color: #ffffff;
+  cursor: default;
 }
 .btn-danger {
   color: #ffffff;

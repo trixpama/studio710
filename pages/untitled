@@ -1,0 +1,5 @@
+<!-- Displays favorites list -->
+
+<div ng-repeat="fav in favorites track by $index">
+    <p>{{fav.name}}</p>
+</div>

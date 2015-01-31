@@ -18,18 +18,6 @@ scotchApp.config(function($routeProvider) {
             controller  : 'mainController'
         })
 
-        // // route for the about page
-        // .when('/about', {
-        //     templateUrl : 'pages/about.html',
-        //     controller  : 'aboutController'
-        // })
-
-        // // route for the contact page
-        // .when('/contact', {
-        //     templateUrl : 'pages/contact.html',
-        //     controller  : 'contactController'
-        // })
-    
         // route for the contact page
         .when('/font/:font', {
             templateUrl : 'pages/primaryFontList.html',
