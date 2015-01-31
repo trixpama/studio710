@@ -1,5 +1,5 @@
 
-    scotchApp.controller('contactController', function($scope, $route) {
+    scotchApp.controller('fontController', function($scope, $route) {
         
         
         var font = decodeURIComponent($route.current.params.font);
@@ -12,13 +12,13 @@
             
             var pairs = {
                 'fontSerif':[
-                    {name:'open sans', cssName:'font-open-sans'},
-                    {name:'open awfeawef', cssName:'font-open-awefawefawefawe'},
-                    {name:'open awefawef', cssName:'font-open-wefawef'},
-                    {name:'open ttttttttt', cssName:'font-open-awefawefe'},
-                    {name:'open vvvvvvvv', cssName:'font-open-awfaw'}
+                    {name:'Roboto Slab', cssName:'font-roboto-slab'},
+                    {name:'EB Garamond', cssName:'font-eb-garamond'},
+                    {name:'Noto Serif', cssName:'font-noto-serif'},
+                    {name:'PT Serif', cssName:'font-pt-serif'},
+                    {name:'Quattrocento', cssName:'font-quattrocento'}
                 ],
-                'open sans':[
+                'fontSansSerif':[
                     {name:'open sans', cssName:'font-open-sans'},
                     {name:'open awfeawef', cssName:'font-open-awefawefawefawe'},
                     {name:'open awefawef', cssName:'font-open-wefawef'},
@@ -27,7 +27,8 @@
                 ]
             };
             
-            
+           
+
             $scope.pairs = pairs[font];
             
             $scope.fontClick = function() {

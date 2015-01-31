@@ -1,9 +1,9 @@
-<!--  <header>
+ <header>
             <nav class="navbar navbar-default">
             <div class="container">
-                <div class="navbar-header">
+            <!--     <div class="navbar-header">
                     <a class="navbar-brand" href="/">font-to-go</a>
-                </div>
+                </div> -->
 
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
@@ -13,19 +13,19 @@
             </nav>
         </header>
 
- -->
 
 
-<ng-controller='fontController'>
+
+<ng-controller='contactController'>
     
 <div ng-repeat="font in pairs" class="jumbotron text-center">
 	<p class="{{font.cssName}}">{{font.name}}</p>
-    <!-- <button ng-click="fontClick()">Add to Favorites</button> -->
+    <button ng-click="fontClick()">Add to Favorites</button>
 </div>
 
-<!-- <div ng-repeat="fav in favorites track by $index">
+<div ng-repeat="fav in favorites track by $index">
     <p>{{fav.name}}</p>
 </div>
- -->
+
        
 
