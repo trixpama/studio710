@@ -1,76 +1,70 @@
 <!DOCTYPE html>
-    <html ng-app="scotchApp">
-    <head>
-      <!-- SCROLLS -->
-      <!-- load bootstrap and fontawesome via CDN -->
-      <!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
-      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" /> -->
+<html ng-app="scotchApp">
+<head>
+  <!-- SCROLLS -->
+  <!-- load bootstrap and fontawesome via CDN -->
+  <!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" /> -->
 
-      <link rel="stylesheet" href="startbootstrap-freelancer-1.0.2/css/bootstrap.min.css" />
-      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" /> 
-      <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:regular&amp;text=Open%20Sans" />
-      <!-- SPELLS -->
-      <!-- load angular and angular route via CDN -->
-        
-        <script src="http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
-        <script type="text/javascript">
-          WebFont.load({
-            google: {
-              families: ['Cantarell', 'Open Sans']
-            }
-          });
-        </script>
-        <style type="text/css">
-        
-            
-            .font-open-sans {
-                font-family: 'Open Sans';
-            }
-            .font-cantarell {
-                
-            }
-        </style>
+  <link rel="stylesheet" href="startbootstrap-freelancer-1.0.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" /> 
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:regular&amp;text=Open%20Sans" />
+  <!-- SPELLS -->
+  <!-- load angular and angular route via CDN -->
     
-    </head>
+    <script src="http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+    <script type="text/javascript">
+      WebFont.load({
+        google: {
+          families: ['Cantarell', 'Open Sans']
+        }
+      });
+    </script>
+    <style type="text/css">
+    
+        
+        .font-open-sans {
+            font-family: 'Open Sans';
+        }
+        .font-cantarell {
+            
+        }
+    </style>
+
+</head>
 
 
-        <!-- HEADER AND NAVBAR -->
-        <header>
-            <nav class="navbar navbar-default">
-            <div class="container">
-            <!--     <div class="navbar-header">
-                    <a class="navbar-brand" href="/">font-to-go</a>
-                </div> -->
+    <!-- HEADER AND NAVBAR -->
+    <header>
+        <nav class="navbar navbar-default">
+        <div class="container">
+        <!--     <div class="navbar-header">
+                <a class="navbar-brand" href="/">font-to-go</a>
+            </div> -->
 
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
-                    <li><a href="#contact"><i class="fa fa-home"> Contact</i></a></li>
-                    <li><a href="#font/museo"><i class="fa fa-home"> Museo</i></a></li>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><i class="fa fa-home"></i></a></li>
 
-                    
-                </ul>
-            </div>
-            </nav>
-        </header>
+            </ul>
+        </div>
+        </nav>
+    </header>
 
 <div id="main">
-            <!-- this space is where we display everything -->
-            <!-- div ng-view displays the entire app -->
-           <div ng-view></div>
+        <!-- this space is where we display everything -->
+        <!-- div ng-view displays the entire app -->
+       <div ng-view></div>
 </div>
 
+          <script src="https://cdn.rawgit.com/lodash/lodash/3.0.1/lodash.min.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
 
+  <script src="script.js"></script>
+  <script src="controllers/home.js"></script>
+  <script src="controllers/about.js"></script>
+  <script src="controllers/contact.js"></script>
 
-
-              <script src="https://cdn.rawgit.com/lodash/lodash/3.0.1/lodash.min.js"></script>
-              <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
-          <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
-      <script src="script.js"></script>
-      <script src="controllers/home.js"></script>
-      <script src="controllers/about.js"></script>
-      <script src="controllers/contact.js"></script>
-      <script src="controllers/museo.js"></script>
-
-    </body>
-    </html>
+</body>
+</html>

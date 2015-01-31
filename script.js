@@ -24,17 +24,17 @@ scotchApp.config(function($routeProvider) {
             controller  : 'aboutController'
         })
 
-        // route for the contact page
-        .when('/contact', {
-            templateUrl : 'pages/contact.html',
-            controller  : 'contactController'
+        // route for the primary font list
+        .when('/primaryFont', {
+            templateUrl : 'pages/primaryFont.html',
+            controller  : 'primaryFontController'
         })
     
-        // route for the contact page
-        .when('/font/:font', {
-            templateUrl : 'pages/contact.html',
-            controller  : 'contactController'
-        });
+        // // route for the contact page
+        // .when('/font/:serifs', {
+        //     templateUrl : 'pages/primaryFont.html',
+        //     controller  : 'primaryFontController'
+        // });
 });
 
 
