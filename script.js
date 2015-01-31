@@ -32,7 +32,7 @@ scotchApp.config(function($routeProvider) {
     
         // route for the contact page
         .when('/font/:font', {
-            templateUrl : 'pages/contact.html',
+            templateUrl : 'pages/primaryFontList.html',
             controller  : 'contactController'
         });
 });
