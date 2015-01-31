@@ -32,10 +32,10 @@
             $scope.fontClick = function() {
                 console.log(this.font);
                 scotchApp.favorites.push(this.font);
-                // Display an info toast with no title
-                toastr.info('Added to library')
-                
                 $scope.favorites = scotchApp.favorites;
+                // Display an info toast with no title
+                toastr.success('Added to library!');      
+
             };
             
         } else {
