@@ -17,7 +17,7 @@ scotchApp.config(function($routeProvider) {
         })
         
         // route for the contact page
-        .when('/pairs', {
+        .when('/body/:primeFont', {
             templateUrl : 'pages/fontPairing.html',
             controller  : 'fontPairsController'
         });

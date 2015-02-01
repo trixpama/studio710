@@ -1,53 +1,80 @@
-
+        // create the controller and inject Angular's $scope
     scotchApp.controller('fontPairsController', function($scope, $route) {
-        
-        
-        var font = decodeURIComponent($route.current.params.font);
-        
-        console.log(font);
-        
-        if (font) {
+//we added this part
+    var primeFont = decodeURIComponent($route.current.params.primeFont);
+
+    console.log(primeFont);
+
+if (primeFont) {
             
-            //this should be in another controller with another view
+            // this should be in another controller with another view
             
             var pairs = {
-                'fontSerif':[
-                    {name:'Roboto Slab', cssName:'font-roboto-slab'},
+                'Roboto Slab':[
+                    {name:'Testing', cssName:'font-roboto-slab'},
                     {name:'EB Garamond', cssName:'font-eb-garamond'},
                     {name:'Noto Serif', cssName:'font-noto-serif'},
-                    {name:'PT Serif', cssName:'font-pt-serif'},
-                    {name:'Quattrocento', cssName:'font-quattrocento'}
                 ],
-                'fontSansSerif':[
+                'EB Garamond':[
                     {name:'Open Sans', cssName:'font-open-sans'},
                     {name:'Lato', cssName:'font-lato'},
-                    {name:'Roboto', cssName:'font-roboto'},
-                    {name:'Raleway', cssName:'font-raleway'},
-                    {name:'PT Sans', cssName:'font-pt-sans'}
                 ]
-            };           
-
-            $scope.pairs = pairs[font];
-            
-            $scope.fontClick = function() {
-                console.log(this.font);
-                scotchApp.favorites.push(this.font);
-                $scope.favorites = scotchApp.favorites;
-                // Display an info toast with no title
-                toastr.success('Added to library!');      
-
             };
+
+
+
+        // create a message to display in our view
+        $scope.message = 'Everyone come and see how good I look!';
+
+
+        
+        // });
+
+
+
+
+    // scotchApp.controller('fontPairsController', function($scope, $route) {
+        
+        
+    //     var primeFont = decodeURIComponent($route.current.params.primeFont);
+        
+    //     console.log(primeFont);
+        
+    //     if (primeFont) {
             
-        } else {
+    //         // this should be in another controller with another view
             
-            //keep this as your font selection controller
+    //         var pairs = {
+    //             'Roboto Slab':[
+    //                 {name:'Testing', cssName:'font-roboto-slab'},
+    //                 {name:'EB Garamond', cssName:'font-eb-garamond'},
+    //                 {name:'Noto Serif', cssName:'font-noto-serif'},
+    //             ],
+    //             'EB Garamond':[
+    //                 {name:'Open Sans', cssName:'font-open-sans'},
+    //                 {name:'Lato', cssName:'font-lato'},
+    //             ]
+    //         };           
+
+    //         // $scope.sets = sets[primeFont];
+            
+    //         // $scope.primeFontClick = function() {
+    //         //     console.log(this.primeFont);
+    //         //     scotchApp.favorites.push(this.primeFont);
+    //         //     $scope.favorites = scotchApp.favorites;
+    //         //     // Display an info toast with no title
+    //         //     toastr.success('Added to library!');      
+
+    //         // };
+            
+    //     } else {}
+            
+    //         //keep this as your font selection controller
             
             
-            //don`t list stuff as seperate variables, use an array and ng-repeat
-            
-        }
+    //         //don`t list stuff as seperate variables, use an array and ng-repeat
         
         
 
-    });
+    // });
 
