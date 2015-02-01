@@ -1,8 +1,11 @@
 <ng-controller='fontController'>
-    
+
 <div ng-repeat="font in pairs" class="jumbotron text-center">
-	<p class="{{font.cssName}}">{{font.name}}</p>
+	 <a href='#pairs'>   
+	 <p class="{{font.cssName}}">{{font.name}}</p>
+	 </a>
  <br/>   
+
     <span class="btn-info badge" ng-click="fontClick()">Add to Favorites</span>
 
 </div>

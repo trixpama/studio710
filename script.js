@@ -1,11 +1,3 @@
-// script.js
-
-// create the module and name it scotchApp
-    // also include ngRoute for all our routing needs
-
-//    var scotchApp =  angular.module('myApp', ['jdFontselect']).constant('jdFontselectConfig', {
-//   googleApiKey: 'AIzaSyBylGW2HEJZdkYSLe-r1oyTncoZUXCnqIA'
-// });    
 var scotchApp = angular.module('scotchApp', ['ngRoute']);
 
 // configure our routes
@@ -22,7 +14,15 @@ scotchApp.config(function($routeProvider) {
         .when('/font/:font', {
             templateUrl : 'pages/primaryFontList.html',
             controller  : 'fontController'
+        })
+        
+        // route for the contact page
+        .when('/pairs', {
+            templateUrl : 'pages/fontPairing.html',
+            controller  : 'fontPairsController'
         });
+
+
 });
 
 
