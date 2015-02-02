@@ -1,15 +1,18 @@
-        // create the controller and inject Angular's $scope
-    scotchApp.controller('fontPairsController', function($scope, $route) {
-//we added this part
+ // create the controller and inject Angular's $scope
+    
+scotchApp.controller('fontPairsController', function($scope, $route) {
+
+    //we added this part
+
     var primeFont = decodeURIComponent($route.current.params.primeFont);
 
     console.log(primeFont);
 
-if (primeFont) {
+    if (primeFont) {
             
-            // this should be in another controller with another view
+         // this should be in another controller with another view
             
-            var pairs = {
+        var pairs = {
                 'Roboto Slab':[
                     {name:'Testing', cssName:'font-roboto-slab'},
                     {name:'EB Garamond', cssName:'font-eb-garamond'},
@@ -19,12 +22,12 @@ if (primeFont) {
                     {name:'Open Sans', cssName:'font-open-sans'},
                     {name:'Lato', cssName:'font-lato'},
                 ]
-            };
+        }
+        $scope.pairs = pairs[primeFont];
+    }
+});
 
 
-
-        // create a message to display in our view
-        $scope.message = 'Everyone come and see how good I look!';
 
 
         
