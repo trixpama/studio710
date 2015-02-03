@@ -8,6 +8,7 @@ scotchApp.controller('fontPairsController', function($scope, $route) {
     
     
     console.log(primeFont);
+
     // $scope.names = scotchApp.names;
     // var fontsForPrimary = scotchApp.fontsForPrimary[];
     
@@ -79,6 +80,8 @@ scotchApp.controller('fontPairsController', function($scope, $route) {
                 ]
         }
     $scope.pairs = pairs[primeFont];
+
     }
+    $scope.message = 'Whatever artisan Helvetica fixie, kitsch irony cornhole, vinyl flexitarian. Tousled seitan pug sartorial, Austin lo-fi readymade ethical VHS. YOLO tattooed Schlitz, fanny pack Pitchfork photo booth listicle single-origin coffee whatever mumblecore sustainable.';
 });
 
