@@ -1,23 +1,12 @@
-<!-- <ng-controller='fontPairsController'> -->
-<!-- <div ng-controller='fontPairsController' class="jumbotron text-center" ng-repeat="name in names">
-	
-	<p>{{name.name}}</p>
 
-</div> -->
+<div>
+	
+	<p>This is where your primary font appears</p>
+
+</div>
+
 <div ng-controller='fontPairsController' ng-repeat="primeFont in pairs" class="jumbotron text-center">
 	  
  <p class="{{primeFont.cssName}}">{{primeFont.name}}</p>
 
 </div>
-
-
-<!-- <div ng-repeat="font in pairs" class="jumbotron text-center">
-	 <a href='#pairs'>   
-	 <p class="{{font.cssName}}">{{font.name}}</p>
-	 </a>
- <br/>   
-
-    <span class="btn-info badge" ng-click="fontClick()">Add to Favorites</span>
-
-</div>
- -->

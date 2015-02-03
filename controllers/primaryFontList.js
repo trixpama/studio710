@@ -29,7 +29,8 @@
 
         //this part calls the array and displays the listfont
         $scope.pairs = pairs[font];
-            
+         
+        //this part listens to the font click and pushes the font on to favourites    
             $scope.fontClick = function() {
                 console.log(this.font);
                 scotchApp.favorites.push(this.font);

@@ -10,19 +10,19 @@ scotchApp.config(function($routeProvider) {
             controller  : 'mainController'
         })
 
-        // route for the contact page
+        // route for the primary font list
         .when('/font/:font', {
             templateUrl : 'pages/primaryFontList.html',
             controller  : 'fontController'
         })
         
-        // route for the contact page
+        // route for the font pairs
         .when('/body/:primeFont', {
             templateUrl : 'pages/fontPairing.html',
             controller  : 'fontPairsController'
         });
 
-
+        
 });
 
 
