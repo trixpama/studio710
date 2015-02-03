@@ -82,6 +82,6 @@ scotchApp.controller('fontPairsController', function($scope, $route) {
     $scope.pairs = pairs[primeFont];
 
     }
-    $scope.message = 'Whatever artisan Helvetica fixie, kitsch irony cornhole, vinyl flexitarian. Tousled seitan pug sartorial, Austin lo-fi readymade ethical VHS. YOLO tattooed Schlitz, fanny pack Pitchfork photo booth listicle single-origin coffee whatever mumblecore sustainable.';
+    $scope.message = 'Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui. Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Curabitur blandit tempus porttitor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.';
 });
 
