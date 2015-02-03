@@ -27,7 +27,8 @@
                 ]
             };           
 
-            $scope.pairs = pairs[font];
+        //this part calls the array and displays the listfont
+        $scope.pairs = pairs[font];
             
             $scope.fontClick = function() {
                 console.log(this.font);
@@ -36,7 +37,10 @@
                 // Display an info toast with no title
                 toastr.success('Added to library!');      
 
+
             };
+
+
             
         } else {
             

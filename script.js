@@ -29,6 +29,7 @@ scotchApp.config(function($routeProvider) {
 //keep track of favorite fonts
 
 scotchApp.favorites = [];
+// scotchApp.names = [];
 
 
 /*

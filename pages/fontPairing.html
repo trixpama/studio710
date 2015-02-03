@@ -1,8 +1,11 @@
-<ng-controller='fontPairsController'>
+<!-- <ng-controller='fontPairsController'> -->
+<!-- <div ng-controller='fontPairsController' class="jumbotron text-center" ng-repeat="name in names">
+	
+	<p>{{name.name}}</p>
 
-<div ng-repeat="primeFont in pairs" class="jumbotron text-center">
+</div> -->
+<div ng-controller='fontPairsController' ng-repeat="primeFont in pairs" class="jumbotron text-center">
 	  
-<!-- 	 <p> {{message}}</p> -->
  <p class="{{primeFont.cssName}}">{{primeFont.name}}</p>
 
 </div>
