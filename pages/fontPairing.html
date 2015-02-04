@@ -1,19 +1,12 @@
-<!-- <div>
-    
-<br/><br/><br/><br/>
 
-</div>
- -->
-<div class="jumbotron text-center">
+<div class="text-center">
 	
-	<p class="{{fontcss}}">{{primeFont}}</p>
+	<h1 class="{{fontcss}}">{{primeFont}}</h1><br/>
 
 </div>
 
 <div ng-controller='fontPairsController' ng-repeat="pair in pairs" class="jumbotron text-center">
 	  
- <h2 class="{{pair.cssName}}">{{pair.name}}</h2>
-
- <h5 class="{{pair.cssName}} text-left">{{message}}</h5>
+ <h5 class="{{pair.cssName}} text-left">{{primeFont}} goes well with <u>{{pair.name}}</u>. {{message}}</h5>
 
 </div>
