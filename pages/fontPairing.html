@@ -5,7 +5,7 @@
 
 </div>
 
-<div ng-controller='fontPairsController' ng-swipe-left="pair in pairs" class="jumbotron text-center">
+<div ng-controller='fontPairsController' ng-repeat="pair in pairs" class="jumbotron text-center">
 	  
  <h5 class="{{pair.cssName}} text-left">{{primeFont}} goes well with <u>{{pair.name}}</u>. {{message}}</h5>
 
