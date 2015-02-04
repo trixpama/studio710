@@ -1,7 +1,7 @@
  // create the controller and inject Angular's $scope
     
 scotchApp.controller('fontPairsController', function($scope, $route) {
-angular.module('scotchApp', ['ngTouch']);
+
     //we added this part
 
     var primeFont = decodeURIComponent($route.current.params.primeFont);
