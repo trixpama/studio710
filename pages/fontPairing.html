@@ -1,19 +1,19 @@
-<div>
+<!-- <div>
     
 <br/><br/><br/><br/>
 
 </div>
-
-<div>
+ -->
+<div class="jumbotron text-center">
 	
-	<p>This is where your primary font appears</p>
+	<p class="{{fontcss}}">{{primeFont}}</p>
 
 </div>
 
-<div ng-controller='fontPairsController' ng-repeat="primeFont in pairs" class="jumbotron text-center">
+<div ng-controller='fontPairsController' ng-repeat="pair in pairs" class="jumbotron text-center">
 	  
- <h2 class="{{primeFont.cssName}}">{{primeFont.name}}</h2>
+ <h2 class="{{pair.cssName}}">{{pair.name}}</h2>
 
- <h5 class="{{primeFont.cssName}} text-left">{{message}}</h5>
+ <h5 class="{{pair.cssName}} text-left">{{message}}</h5>
 
 </div>

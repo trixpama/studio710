@@ -79,9 +79,24 @@ scotchApp.controller('fontPairsController', function($scope, $route) {
 
                 ]
         }
+  var fontdisplay = { 'Roboto Slab': 'font-roboto-slab',
+                    'EB Garamond': 'font-eb-garamond',
+                    'Noto Serif': 'font-noto-serif',
+                    'PT Serif': 'font-pt-serif',
+                    'Quattrocento': 'font-quattrocento',
+                    'Open Sans': 'font-open-sans',
+                    'Lato': 'font-lato',
+                    'Roboto': 'font-roboto',
+                    'Raleway': 'font-raleway',
+                    'PT Sans': 'font-pt-sans' };
+
     $scope.pairs = pairs[primeFont];
+    $scope.fontcss = fontdisplay[primeFont];
+    $scope.primeFont = primeFont;
 
     }
     $scope.message = 'Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui. Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Curabitur blandit tempus porttitor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.';
 });
+
+
 
