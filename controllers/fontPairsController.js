@@ -1,5 +1,3 @@
- // create the controller and inject Angular's $scope
-    
 scotchApp.controller('fontPairsController', function($scope, $route) {
 
     //we added this part

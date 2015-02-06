@@ -897,11 +897,11 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 15px;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
   line-height: 1.42857143;
-  color: #2c3e50;
-  background-color: #ffffff;
+  color: #333333;
+  background-color: #fafafa;
 }
 input,
 button,
@@ -912,13 +912,13 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #18bc9c;
+  color: #F06292;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #18bc9c;
-  text-decoration: underline;
+  color: #880E4F;
+  text-decoration: none;
 }
 a:focus {
   outline: thin dotted;
@@ -3071,7 +3071,7 @@ fieldset[disabled] .btn-danger.active {
   background-color: #ffffff;
 }
 .btn-link {
-  color: #18bc9c;
+  color: #607D8B;
   font-weight: normal;
   border-radius: 0;
 }
@@ -3092,8 +3092,8 @@ fieldset[disabled] .btn-link {
 }
 .btn-link:hover,
 .btn-link:focus {
-  color: #18bc9c;
-  text-decoration: underline;
+  color: #37474F;
+  text-decoration: none;
   background-color: transparent;
 }
 .btn-link[disabled]:hover,
@@ -4159,7 +4159,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: #2c3e50;
+  background-color: #263238;
   border-color: transparent;
 }
 .navbar-default .navbar-brand {
@@ -4167,7 +4167,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #18bc9c;
+  color: #C5CAE9;
   background-color: transparent;
 }
 .navbar-default .navbar-text {
@@ -4178,7 +4178,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #18bc9c;
+  color: #9FA8DA;
   background-color: transparent;
 }
 .navbar-default .navbar-nav > .active > a,
@@ -4618,10 +4618,10 @@ a.badge:focus {
   margin-left: 3px;
 }
 .jumbotron {
-  padding: 30px 15px;
-  margin-bottom: 30px;
+  padding: 30px 45px;
+  margin-bottom: 2px;
   color: inherit;
-  background-color: #ecf0f1;
+  background-color: #eeeeee;
 }
 .jumbotron h1,
 .jumbotron .h1 {
@@ -6331,11 +6331,11 @@ button.close {
 }
 .navbar-default .badge {
   background-color: #fff;
-  color: #2c3e50;
+  color: #311B92;
 }
 .navbar-inverse .badge {
   background-color: #fff;
-  color: #18bc9c;
+  color: #311B92;
 }
 .navbar-brand {
   padding: 18.5px 15px 20.5px;
@@ -6537,7 +6537,8 @@ a.list-group-item-success.active:hover,
 a.list-group-item-success.active:focus {
   background-color: #15a589;
 }
-a.list-group-item-warning.active {
+a.list-group-item-warning.active 
+{
   background-color: #f39c12;
 }
 a.list-group-item-warning.active:hover,

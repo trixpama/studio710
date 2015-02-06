@@ -1,4 +1,3 @@
-
     scotchApp.controller('fontController', function($scope, $route) {
         
         
@@ -29,6 +28,7 @@
 
         //this part calls the array and displays the listfont
         $scope.pairs = pairs[font];
+        
          
         //this part listens to the font click and pushes the font on to favourites    
             $scope.fontClick = function() {
@@ -36,6 +36,7 @@
                 scotchApp.favorites.push(this.font);
                 $scope.favorites = scotchApp.favorites;
                 // Display an info toast with no title
+                
                 toastr.success('Added to library!');      
 
 
