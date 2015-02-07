@@ -1,16 +1,11 @@
 scotchApp.controller('fontPairsController', function($scope, $route) {
 
-    //we added this part
 
     var primeFont = decodeURIComponent($route.current.params.primeFont);
     
     
     console.log(primeFont);
 
-    // $scope.names = scotchApp.names;
-    // var fontsForPrimary = scotchApp.fontsForPrimary[];
-    
-    
     if (primeFont) {
 
         var pairs = {

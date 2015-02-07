@@ -9,8 +9,6 @@
         
         if (font) {
             
-            //this should be in another controller with another view
-            
             var pairs = {
                 'fontSerif':[
                     {name:'Roboto Slab', cssName:'font-roboto-slab'},

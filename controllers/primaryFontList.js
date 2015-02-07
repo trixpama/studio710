@@ -35,23 +35,16 @@
                 console.log(this.font);
                 scotchApp.favorites.push(this.font);
                 $scope.favorites = scotchApp.favorites;
-                // Display an info toast with no title
+               
+                // Display toast
                 
                 toastr.success('Added to library!');      
 
 
             };
 
-
             
-        } else {
-            
-            //keep this as your font selection controller
-            
-            
-            //don`t list stuff as seperate variables, use an array and ng-repeat
-            
-        }
+        } else { }
         
         
 
