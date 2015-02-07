@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+    <html ng-app="scotchApp">
+    <head>
+      <!-- SCROLLS -->
+      <!-- load bootstrap and fontawesome via CDN -->
+
+      <link rel="stylesheet" href="startbootstrap-freelancer-1.0.2/css/bootstrap.css" />
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" /> 
+      <link href="toastr_components/toastr.css" rel="stylesheet"/>
+      
+
+      <!-- SPELLS -->
+      <!-- load angular and angular route via CDN -->
+      
+      <style type="text/css">
+      body{
+        padding-top:75px;
+        font-color: #333333;}
+        
+        /*Serifs*/
+            
+            .font-roboto-slab {
+                font-family: 'Roboto Slab';
+            }
+            .font-eb-garamond {
+                font-family: 'EB Garamond';   
+            }
+            .font-noto-serif {
+                font-family: 'Noto Serif';   
+            }
+            .font-pt-serif {
+                font-family: 'PT Serif';   
+            }
+            .font-quattrocento {
+                font-family: 'Quattrocento';   
+            }
+            .font-arvo {
+                font-family: 'Arvo';   
+            }
+
+          /*Sans Serifs*/
+          
+          .font-open-sans {
+              font-family: 'Open Sans';
+          }
+          .font-lato {
+              font-family: 'Lato';
+          }
+          .font-roboto {
+              font-family: 'Roboto';
+          }
+          .font-raleway {
+              font-family: 'Raleway';
+          }
+          .font-pt-sans {
+              font-family: 'PT Sans';
+          }
+           .font-anton {
+              font-family: 'Anton';
+          }
+          .font-kelly-slab {
+              font-family: 'Kelly Slab';
+          }
+          .font-noto-sans {
+                font-family: 'Noto Sans';   
+            }
+          .font-oswald {
+              font-family: 'Oswald';   
+          }
+          .font-source-sans-pro {
+              font-family: 'Source Sans Pro';   
+          }
+        </style>
+    
+    </head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <!-- HEADER AND NAVBAR -->
+        <header>
+
+            <!-- Working on pushing content down -->
+
+            <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#/"><img src="app-logo2x.png" width="128px"/></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+           <div class="collapse navbar-collapse" data-toggle="collapse" id="bs-example-navbar-collapse-1">
+
+                <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target=".navbar-collapse" href="#font/fontSerif">Serifs</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a data-toggle="collapse" data-target=".navbar-collapse" href="#font/fontSansSerif">Sans-Serifs</a>
+                    </li>
+                </ul>
+            </div>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+            <!-- End Nav -->
+        </header>
+        <body>
+<div>
+</div>
+<div id="main">
+
+            <!-- div ng-view displays the entire app -->
+           <div ng-view></div>
+              
+</div>
+
+<!-- Angular Stuff -->
+      <script src="https://cdn.rawgit.com/lodash/lodash/3.0.1/lodash.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+
+<!-- Google Font API -->
+      <script src="http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+
+      <script>
+  WebFont.load({
+    google: {
+      families: ['Roboto Slab', 'EB Garamond', 'Noto Serif', 'PT Serif', 'Quattrocento', 'Open Sans', 'Lato', 'Roboto', 'Raleway', 'PT Sans', 'Anton', 'Kelly Slab', 'Noto Sans', 'Oswald', 'Arvo', 'Source Sans Pro']
+    }
+  });
+</script>
+
+<!-- Toastr JS --> 
+      <script src="toastr_components/toastr.js"></script>
+
+<!-- Router -->
+      <script src="script.js"></script>
+      
+<!-- Controllers -->
+      <script src="controllers/home.js"></script>
+      <script src="controllers/primaryFontList.js"></script>
+      <script src="controllers/fontPairsController.js"></script>
+      
+<!-- Bootstrap -->
+      <script src="startbootstrap-freelancer-1.0.2/js/bootstrap.min.js"></script>
+
+    </body>
+    </html>

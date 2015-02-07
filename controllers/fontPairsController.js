@@ -1,0 +1,95 @@
+scotchApp.controller('fontPairsController', function($scope, $route) {
+
+
+    var primeFont = decodeURIComponent($route.current.params.primeFont);
+    
+    
+    console.log(primeFont);
+
+    if (primeFont) {
+
+        var pairs = {
+            //Serifs
+                'Roboto Slab':[          
+                    {name:'Roboto', cssName:'font-roboto'},
+                    {name:'Raleway', cssName:'font-raleway'},
+                    {name:'PT Serif', cssName:'font-pt-serif'},
+
+                ],
+                'EB Garamond':[
+                    {name:'Open Sans', cssName:'font-open-sans'},
+                    {name:'Anton', cssName:'font-anton'},
+                    {name:'Kelly Slab', cssName:'font-kelly-slab'},
+
+                ],
+                 'Noto Serif':[
+                    {name:'Open Sans', cssName:'font-open-sans'},
+                    {name:'Noto Sans', cssName:'font-noto-sans'},
+                    {name:'Lato', cssName:'font-lato'},
+
+                ],
+                'PT Serif':[
+                    {name:'Lato', cssName:'font-lato'},
+                    {name:'Oswald', cssName:'font-oswald'},
+                    {name:'Arvo', cssName:'font-arvo'},
+
+                ],
+                'Quattrocento':[
+                    {name:'Open Sans', cssName:'font-open-sans'},
+                    {name:'Raleway', cssName:'font-raleway'},
+                    {name:'Arvo', cssName:'font-arvo'},
+
+                ],
+            //Sans-Serifs
+                'Open Sans':[          
+                    {name:'Oswald', cssName:'font-oswald'},
+                    {name:'Source Sans Pro', cssName:'font-sourse-sans-pro'},
+                    {name:'Raleway', cssName:'font-raleway'},
+
+                ],
+                'Lato':[
+                    {name:'Source Sans Pro', cssName:'font-sourse-sans-pro'},
+                    {name:'Roboto', cssName:'font-roboto'},
+                    {name:'Open Sans', cssName:'font-open-sans'},
+
+                ],
+                 'Roboto':[
+                    {name:'Roboto Slab', cssName:'font-roboto-slab'},
+                    {name:'Raleway', cssName:'font-raleway'},
+                    {name:'Oswald', cssName:'font-oswald'},
+
+                ],
+                'Raleway':[
+                    {name:'Open Sans', cssName:'font-open-sans'},
+                    {name:'Oswald', cssName:'font-oswald'},
+                    {name:'Lato', cssName:'font-lato'},
+
+                ],
+                'PT Sans':[
+                    {name:'Lato', cssName:'font-lato'},
+                    {name:'Roboto', cssName:'font-roboto'},
+                    {name:'Arvo', cssName:'font-arvo'},
+
+                ]
+        }
+  var fontdisplay = { 'Roboto Slab': 'font-roboto-slab',
+                    'EB Garamond': 'font-eb-garamond',
+                    'Noto Serif': 'font-noto-serif',
+                    'PT Serif': 'font-pt-serif',
+                    'Quattrocento': 'font-quattrocento',
+                    'Open Sans': 'font-open-sans',
+                    'Lato': 'font-lato',
+                    'Roboto': 'font-roboto',
+                    'Raleway': 'font-raleway',
+                    'PT Sans': 'font-pt-sans' };
+
+    $scope.pairs = pairs[primeFont];
+    $scope.fontcss = fontdisplay[primeFont];
+    $scope.primeFont = primeFont;
+
+    }
+    $scope.message = 'Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui. Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Curabitur blandit tempus porttitor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.';
+});
+
+
+
